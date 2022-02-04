@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+<BrowserRouter>
+  <div
+    className="flex flex-col h-screen justify-between"
+  >
+    <div>
+      <Header />
+      <ErrorBoundary>
+        <AppRoutes />
+      </ErrorBoundary>
+    </div>
+    <Footer />
+  </div>
+</BrowserRouter>
+`;
