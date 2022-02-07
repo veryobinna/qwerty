@@ -10,8 +10,6 @@ interface Props {
 }
 
 const Photos: React.FC<Props> = ({ photos }) => {
-  let nextId;
-  let previousId;
   const params = useParams();
   const currentId = params.id;
   const currentIdx = currentId
@@ -19,6 +17,9 @@ const Photos: React.FC<Props> = ({ photos }) => {
     : -1;
 
   const photo = photos[currentIdx];
+
+  let nextId;
+  let previousId;
 
   if (currentIdx !== -1) {
     nextId = photos[currentIdx + 1]?.id;
